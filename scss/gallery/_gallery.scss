@@ -4,13 +4,13 @@
 
 
 .flex-item {
-  @media #{$brk-mid} {
+  @include mq(medium) {
     float: left;
     width: 50%;
     margin: 0 auto;
     padding: 5px;
   }
-  @media #{$brk-wide} {
+  @include mq(large) {
     float: left;
     width: 33.2%;
     margin: 0 auto;

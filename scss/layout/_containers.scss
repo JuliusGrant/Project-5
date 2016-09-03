@@ -4,15 +4,15 @@
   background: white;
   padding: 20px;
 
-  @media #{$brk-narrow} {
+  @include mq(small) {
     text-align: center;
     margin: 5px;
   }
-  @media #{$brk-mid} {
+  @include mq(medium) {
     text-align: center;
     margin: 20px;
   }
-  @media #{$brk-wide} {
+  @include mq(large) {
     text-align: center;
     margin: 20px;
   }
@@ -23,19 +23,19 @@
   margin: 0 auto;
 
   h1 {
-    @media #{$brk-wide} {
+    @include mq(large) {
       text-align: center;
       text-transform: uppercase;
       padding-top: 15px;
     }
   }
 
-  @media #{$brk-mid} {
+  @include mq(medium) {
     text-align: center;
 		width: 80%;
 		margin: 0 auto;
   }
-  @media #{$brk-wide} {
+  @include mq(large) {
     width: 90%;
 		margin: 0 auto;
   }

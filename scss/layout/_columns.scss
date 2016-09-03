@@ -3,12 +3,12 @@
 /* Layout Styles ------------------ */
 
 .col {
-  @media #{$brk-mid} {
+  @include mq(medium) {
     display: inline-block;
     margin-right: -30px;
     width: 50%;
   }
-  @media #{$brk-wide} {
+  @include mq(large) {
     display: inline-block;
     margin-right: -85px;
     width: 50%;
@@ -18,13 +18,13 @@
 .primary {
   @extend %padding;
 
-  @media #{$brk-narrow} {
+  @include mq(small) {
     text-align: center;
   }
-  @media #{$brk-mid} {
+  @include mq(medium) {
     float: right;
   }
-  @media #{$brk-wide} {
+  @include mq(large) {
     float: right;
   }
 }
@@ -33,14 +33,14 @@
   @extend %padding;
   text-align: left;
 
-  @media #{$brk-narrow} {
+  @include mq(small) {
     text-align: center;
   }
-  @media #{$brk-mid} {
+  @include mq(medium) {
     float: left;
     text-align: left;
   }
-  @media #{$brk-wide} {
+  @include mq(large) {
     float: left;
     text-align: left;
   }
@@ -94,7 +94,7 @@
   display: table;
   clear: both;
 
-  @media #{$brk-narrow} {
+  @include mq(small) {
     content: " ";
     display: table;
     clear: both;

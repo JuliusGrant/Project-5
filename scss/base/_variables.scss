@@ -3,9 +3,23 @@
 $dark-grey: #3a3a3a;
 $off-white: #F6F7F2;
 
+// Font Size
+
+$font-size: 1em;
+
+// Font Family
+
+$font-family: 'Poppins';
+
 
 // Media Query breakpoint
 
 $brk-narrow   : '(min-width: 320px)';
 $brk-mid      : '(min-width: 768px)';
 $brk-wide     : '(min-width: 1024px)';
+
+// Media Query breakpoint
+
+$brk-sm  : 320px;
+$brk-md  : 768px;
+$brk-lg  : 1024px;

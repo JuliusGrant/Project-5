@@ -2,10 +2,10 @@
   @extend %padding_tb;
   margin-bottom: 30px;
 
-  @media #{$brk-mid} {
+  @include mq(medium) {
     text-align: center;
   }
-  @media #{$brk-wide} {
+  @include mq(large) {
     width: 90%;
 		margin: 0 auto;
   }

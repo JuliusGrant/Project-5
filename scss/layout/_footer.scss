@@ -5,18 +5,18 @@
 .main-footer {
   font-weight: bolder;
 
-  @media #{$brk-narrow} {
+  @include mq(small) {
     a {
       text-transform: uppercase;
     }
     width: 90%;
 		margin: 0 auto;
   }
-  @media #{$brk-mid} {
+  @include mq(medium) {
     width: 90%;
 		margin: 0 auto;
   }
-  @media #{$brk-wide} {
+  @include mq(large) {
     width: 90%;
 		margin: 0 auto;
   }
@@ -25,44 +25,44 @@
 
 #main-nav {
   li {
-    @media #{$brk-mid} {
+    @include mq(medium) {
       float: left;
       margin-left: 12px;
     }
-    @media #{$brk-wide} {
+    @include mq(large) {
       float: left;
       margin-left: 12px;
     }
   }
 
-  @media #{$brk-narrow} {
+  @include mq(small) {
     float: right;
   }
-  @media #{$brk-mid} {
+  @include mq(medium) {
     float: right;
   }
-  @media #{$brk-wide} {
+  @include mq(large) {
     float: right;
   }
 }
 
 .hidden {
-  @media #{$brk-mid} {
+  @include mq(medium) {
     display: none;
   }
-  @media #{$brk-wide} {
+  @include mq(large) {
     display: none;
   }
 }
 
 #hidden {
-  @media #{$brk-narrow} {
+  @include mq(small) {
     display: none;
   }
-  @media #{$brk-mid} {
+  @include mq(medium) {
     display: inherit;
   }
-  @media #{$brk-wide} {
+  @include mq(large) {
     display: inherit;
   }
 }

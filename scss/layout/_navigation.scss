@@ -13,7 +13,7 @@
 .name {
   @include text(1.5em);
 
-  @media #{$brk-narrow} {
+  @include mq(small) {
     text-align: center;
     padding: 2px;
     font-weight: bolder;
@@ -26,13 +26,13 @@
   margin-bottom: 6px;
   color: #000;
 
-  @media #{$brk-narrow} {
+  @include mq(small) {
     float: left;
   }
-  @media #{$brk-mid} {
+  @include mq(medium) {
     float: left;
   }
-  @media #{$brk-wide} {
+  @include mq(large) {
     float: left;
   }
 }
@@ -43,10 +43,10 @@
   margin-bottom: 6px;
   color: #000;
 
-  @media #{$brk-mid} {
+  @include mq(medium) {
     display: inline-block;
   }
-  @media #{$brk-wide} {
+  @include mq(large) {
     float: left;
   }
 }
@@ -57,17 +57,17 @@
   margin-bottom: 6px;
   color: #000;
 
-  @media #{$brk-narrow} {
+  @include mq(small) {
     text-align: center;
     padding: 2px;
     font-weight: bolder;
     background: white;
   }
-  @media #{$brk-mid} {
+  @include mq(medium) {
     display: inline-block;
     background: none;
   }
-  @media #{$brk-wide} {
+  @include mq(large) {
     float: left;
     margin-left: 12px;
     background: none;
@@ -80,7 +80,7 @@
   margin-bottom: 6px;
   color: #000;
 
-  @media #{$brk-narrow} {
+  @include mq(small) {
     float: left;
     margin-left: 12px;
   }
@@ -113,12 +113,12 @@
       color: #E68364;
     }
   }
-  @media #{$brk-narrow} {
+  @include mq(small) {
     text-align: center;
     padding: 2px;
     font-weight: bolder;
   }
-  @media #{$brk-wide} {
+  @include mq(large) {
     float: right;
   }
 }
