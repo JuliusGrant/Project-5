@@ -1,0 +1,19 @@
+
+
+/* Gallery Styles ------------------ */
+
+
+.flex-item {
+  @media #{$brk-mid} {
+    float: left;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+  }
+  @media #{$brk-wide} {
+    float: left;
+    width: 33.2%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+}

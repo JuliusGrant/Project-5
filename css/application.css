@@ -1,0 +1,385 @@
+/* Base Styles -------------------- */
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
+  background: #F6F7F2; }
+
+@media (min-width: 320px) {
+  p {
+    text-align: center; } }
+
+img {
+  max-width: 100%; }
+
+.main-header {
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .main-header {
+      text-align: center; } }
+  @media (min-width: 1024px) {
+    .main-header {
+      width: 90%;
+      margin: 0 auto; } }
+
+/* footer ------------------ */
+.main-footer {
+  font-weight: bolder; }
+  @media (min-width: 320px) {
+    .main-footer {
+      width: 90%;
+      margin: 0 auto; }
+      .main-footer a {
+        text-transform: uppercase; } }
+  @media (min-width: 768px) {
+    .main-footer {
+      width: 90%;
+      margin: 0 auto; } }
+  @media (min-width: 1024px) {
+    .main-footer {
+      width: 90%;
+      margin: 0 auto; } }
+
+@media (min-width: 768px) {
+  #main-nav li {
+    float: left;
+    margin-left: 12px; } }
+@media (min-width: 1024px) {
+  #main-nav li {
+    float: left;
+    margin-left: 12px; } }
+@media (min-width: 320px) {
+  #main-nav {
+    float: right; } }
+@media (min-width: 768px) {
+  #main-nav {
+    float: right; } }
+@media (min-width: 1024px) {
+  #main-nav {
+    float: right; } }
+
+@media (min-width: 768px) {
+  .hidden {
+    display: none; } }
+@media (min-width: 1024px) {
+  .hidden {
+    display: none; } }
+
+@media (min-width: 320px) {
+  #hidden {
+    display: none; } }
+@media (min-width: 768px) {
+  #hidden {
+    display: inherit; } }
+@media (min-width: 1024px) {
+  #hidden {
+    display: inherit; } }
+
+/* navigation ------------------ */
+#name a {
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  text-transform: none; }
+
+.name {
+  font-size: 1.5em; }
+  @media (min-width: 320px) {
+    .name {
+      text-align: center;
+      padding: 2px;
+      font-weight: bolder; } }
+
+#name {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #000; }
+  @media (min-width: 320px) {
+    #name {
+      float: left; } }
+  @media (min-width: 768px) {
+    #name {
+      float: left; } }
+  @media (min-width: 1024px) {
+    #name {
+      float: left; } }
+
+.name {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #000; }
+  @media (min-width: 768px) {
+    .name {
+      display: inline-block; } }
+  @media (min-width: 1024px) {
+    .name {
+      float: left; } }
+
+.main-nav li {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #000; }
+  @media (min-width: 320px) {
+    .main-nav li {
+      text-align: center;
+      padding: 2px;
+      font-weight: bolder;
+      background: white; } }
+  @media (min-width: 768px) {
+    .main-nav li {
+      display: inline-block;
+      background: none; } }
+  @media (min-width: 1024px) {
+    .main-nav li {
+      float: left;
+      margin-left: 12px;
+      background: none; } }
+
+#main-nav li {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #000; }
+  @media (min-width: 320px) {
+    #main-nav li {
+      float: left;
+      margin-left: 12px; } }
+
+#main-nav a,
+.name a,
+.main-nav a {
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none; }
+
+.main-nav a {
+  font-size: 0.95em;
+  text-transform: uppercase; }
+
+.main-nav a:link {
+  color: #5D3F6A; }
+.main-nav a:hover {
+  color: lightblue; }
+.main-nav a:visited {
+  color: #E68364; }
+@media (min-width: 320px) {
+  .main-nav {
+    text-align: center;
+    padding: 2px;
+    font-weight: bolder; } }
+@media (min-width: 1024px) {
+  .main-nav {
+    float: right; } }
+
+/* Containers -------------------- */
+.flex-container {
+  background: white;
+  padding: 20px; }
+  @media (min-width: 320px) {
+    .flex-container {
+      text-align: center;
+      margin: 5px; } }
+  @media (min-width: 768px) {
+    .flex-container {
+      text-align: center;
+      margin: 20px; } }
+  @media (min-width: 1024px) {
+    .flex-container {
+      text-align: center;
+      margin: 20px; } }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .container h1 {
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 15px; } }
+  @media (min-width: 768px) {
+    .container {
+      text-align: center;
+      width: 80%;
+      margin: 0 auto; } }
+  @media (min-width: 1024px) {
+    .container {
+      width: 90%;
+      margin: 0 auto; } }
+
+/* Extra Styles --------------------- */
+.contentContainer {
+  background: #efefef;
+  padding: 20px;
+  width: 90%;
+  max-width: 960px;
+  min-width: 150px;
+  margin: 0vh auto;
+  border-radius: 10px;
+  border: solid 5px #dbdbdb; }
+
+/* Layout Styles ------------------ */
+@media (min-width: 768px) {
+  .col {
+    display: inline-block;
+    margin-right: -30px;
+    width: 50%; } }
+@media (min-width: 1024px) {
+  .col {
+    display: inline-block;
+    margin-right: -85px;
+    width: 50%; } }
+
+@media (min-width: 320px) {
+  .primary {
+    text-align: center; } }
+@media (min-width: 768px) {
+  .primary {
+    float: right; } }
+@media (min-width: 1024px) {
+  .primary {
+    float: right; } }
+
+.secondary {
+  text-align: left; }
+  @media (min-width: 320px) {
+    .secondary {
+      text-align: center; } }
+  @media (min-width: 768px) {
+    .secondary {
+      float: left;
+      text-align: left; } }
+  @media (min-width: 1024px) {
+    .secondary {
+      float: left;
+      text-align: left; } }
+
+.h1 {
+  font-size: 1.5em; }
+
+.h2 {
+  font-size: 1.75em; }
+
+.skill {
+  width: 70%;
+  margin-top: 10px;
+  margin: 0 auto;
+  padding: 20px 0; }
+
+.portfolio {
+  padding: 15px 15px;
+  display: inline-block; }
+
+.contact {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px;
+  padding-bottom: 60px;
+  border-bottom: 2px solid lightgrey; }
+
+.contact h2 {
+  text-transform: uppercase; }
+
+/* ---- Float clearfix ---- */
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both; }
+  @media (min-width: 320px) {
+    .clearfix::after {
+      content: " ";
+      display: table;
+      clear: both; } }
+
+.main-header {
+  padding: 1.5em 0; }
+
+.primary, .secondary {
+  padding: 20px; }
+
+#name a, #name, .name, .main-nav li, #main-nav li, #main-nav a,
+.name a,
+.main-nav a, .skill, .portfolio, .contact {
+  text-align: center; }
+
+/* Gallery Styles ------------------ */
+@media (min-width: 768px) {
+  .flex-item {
+    float: left;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px; } }
+@media (min-width: 1024px) {
+  .flex-item {
+    float: left;
+    width: 33.2%;
+    margin: 0 auto;
+    padding: 15px; } }
+
+/*///////////////////////////////////////////////////////
+    // Progress Bars \
+///////////////////////////////////////////////////////*/
+.progressBar {
+  margin-bottom: 26px;
+  margin-bottom: 1.66em; }
+
+.progressBar h4 {
+  font-size: 21px;
+  font-size: 1.33em;
+  text-transform: none;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-weight: bold;
+  margin-bottom: 7px;
+  margin-bottom: .33em; }
+
+.progressBarContainer {
+  width: 100%;
+  max-width: 960px;
+  height: 26px;
+  height: 1.66em;
+  background: #e6eae3;
+  background: rgba(8, 102, 220, 0.2);
+  overflow: hidden;
+  border-radius: 5px; }
+
+.progressBarValue {
+  height: 1.66em;
+  float: left;
+  background: #0866dc;
+  background: rgba(8, 102, 220, 0.75); }
+
+.value-00 {
+  width: 0; }
+
+.value-10 {
+  width: 10%; }
+
+.value-20 {
+  width: 20%; }
+
+.value-30 {
+  width: 30%; }
+
+.value-40 {
+  width: 40%; }
+
+.value-50 {
+  width: 50%; }
+
+.value-60 {
+  width: 60%; }
+
+.value-70 {
+  width: 70%; }
+
+.value-80 {
+  width: 80%; }
+
+.value-90 {
+  width: 90%; }
+
+.value-100 {
+  width: 100%; }
+
+/*# sourceMappingURL=application.css.map */

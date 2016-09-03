@@ -1,0 +1,12 @@
+.main-header {
+  @extend %padding_tb;
+  margin-bottom: 30px;
+
+  @media #{$brk-mid} {
+    text-align: center;
+  }
+  @media #{$brk-wide} {
+    width: 90%;
+		margin: 0 auto;
+  }
+}

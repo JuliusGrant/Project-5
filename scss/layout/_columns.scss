@@ -1,0 +1,102 @@
+
+
+/* Layout Styles ------------------ */
+
+.col {
+  @media #{$brk-mid} {
+    display: inline-block;
+    margin-right: -30px;
+    width: 50%;
+  }
+  @media #{$brk-wide} {
+    display: inline-block;
+    margin-right: -85px;
+    width: 50%;
+  }
+}
+
+.primary {
+  @extend %padding;
+
+  @media #{$brk-narrow} {
+    text-align: center;
+  }
+  @media #{$brk-mid} {
+    float: right;
+  }
+  @media #{$brk-wide} {
+    float: right;
+  }
+}
+
+.secondary {
+  @extend %padding;
+  text-align: left;
+
+  @media #{$brk-narrow} {
+    text-align: center;
+  }
+  @media #{$brk-mid} {
+    float: left;
+    text-align: left;
+  }
+  @media #{$brk-wide} {
+    float: left;
+    text-align: left;
+  }
+}
+
+
+.h1 {
+  @include text(1.5em);
+}
+
+.h2 {
+  @include text(1.75em);
+}
+
+
+
+.skill{
+  @extend %centered;
+  width: 70%;
+  margin-top: 10px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.portfolio {
+	@extend %centered;
+  padding: 15px 15px;
+  display: inline-block;
+
+}
+
+
+.contact  {
+  @extend %centered;
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px;
+  padding-bottom: 60px;
+  border-bottom: 2px solid lightgrey;
+}
+
+.contact h2 {
+  text-transform: uppercase;
+}
+
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+
+  @media #{$brk-narrow} {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}

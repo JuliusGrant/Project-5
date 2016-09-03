@@ -1,0 +1,124 @@
+
+
+/* navigation ------------------ */
+
+#name a {
+  @extend %centered;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.name {
+  @include text(1.5em);
+
+  @media #{$brk-narrow} {
+    text-align: center;
+    padding: 2px;
+    font-weight: bolder;
+  }
+}
+
+#name {
+  @extend %centered;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #000;
+
+  @media #{$brk-narrow} {
+    float: left;
+  }
+  @media #{$brk-mid} {
+    float: left;
+  }
+  @media #{$brk-wide} {
+    float: left;
+  }
+}
+
+.name {
+  @extend %centered;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #000;
+
+  @media #{$brk-mid} {
+    display: inline-block;
+  }
+  @media #{$brk-wide} {
+    float: left;
+  }
+}
+
+.main-nav li {
+  @extend %centered;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #000;
+
+  @media #{$brk-narrow} {
+    text-align: center;
+    padding: 2px;
+    font-weight: bolder;
+    background: white;
+  }
+  @media #{$brk-mid} {
+    display: inline-block;
+    background: none;
+  }
+  @media #{$brk-wide} {
+    float: left;
+    margin-left: 12px;
+    background: none;
+  }
+}
+
+#main-nav li {
+  @extend %centered;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #000;
+
+  @media #{$brk-narrow} {
+    float: left;
+    margin-left: 12px;
+  }
+}
+
+#main-nav a,
+.name a,
+.main-nav a {
+  @extend %centered;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+
+.main-nav a {
+  @include text(.95em);
+  text-transform: uppercase;
+}
+
+
+.main-nav {
+  a {
+    &:link {
+      color: #5D3F6A;
+    }
+    &:hover {
+      color: lightblue;
+    }
+    &:visited {
+      color: #E68364;
+    }
+  }
+  @media #{$brk-narrow} {
+    text-align: center;
+    padding: 2px;
+    font-weight: bolder;
+  }
+  @media #{$brk-wide} {
+    float: right;
+  }
+}
